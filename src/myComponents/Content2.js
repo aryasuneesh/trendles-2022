@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const Content = () => {
+export const Content2 = () => {
     let contentStyle={
-        minHeight:"90vh",
+        minHeight:"100vh",
     }
   return (
     <div className='content' style={contentStyle}>Content</div>
