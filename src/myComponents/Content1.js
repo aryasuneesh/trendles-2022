@@ -9,9 +9,12 @@ export const Content1 = () => {
         margin:"0px 15% 0 15%"        
     }
   return (
+    <>
     <div className='content' style={contentStyle}>
-      <p className="h2 mt-4" align="center" style={pStyle}>Trendles</p>
+      <p className="h1 mt-4" align="center" style={pStyle}>Trendles</p>
       <p align="center" className='mt-2 ' style={pStyle}>The Trendles Club organizes and promotes various personality building activities and provides enough avenues under multiple domains to students to facilitate the pursuit of their dreams. </p>
-      </div>
+    </div>
+
+    </>
   )
 }
