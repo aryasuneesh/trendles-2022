@@ -4,7 +4,7 @@ import logo from "../myImages/trendles.png"
 
 export const Navbar = () => {
   let imageStyle = {
-    height: "60px",
+    height: "49px",
     width: "60px",
     transform:"scale(1.6)",
   }
@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-sm navbar-light p-0" style={navStyle}>
+      <nav className="navbar navbar-expand-sm navbar-light bg-light p-0" style={navStyle}>
         <div className="container-fluid">
           <div className='row d-sm-none align-items-center w-100'>
             <div className="col-2 "><a href="#" className="nav-link"><img src={logo} alt="" style={imageStyle} /></a></div>
@@ -31,14 +31,14 @@ export const Navbar = () => {
           </div>
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav justify-content-between w-100 align-items-center">
-              <li><a href="#" className="nav-link text-secondary ">Home</a></li>
-              <li><a href="#" className="nav-link text-secondary ">Events</a></li>
-              <li><a href="#" className="nav-link text-secondary ">Design</a></li>
-              <li className='d-none d-sm-flex'><a href="#" className="nav-link"><img src={logo} alt="" style={imageStyle} /></a></li>
-              <li><a href="#" className="nav-link text-secondary ">Photo</a></li>
-              <li><a href="#" className="nav-link text-secondary ">Video</a></li>
-              <li><a href="#" className="nav-link text-secondary ">More</a></li>
+            <ul className="navbar-nav mt-3 mb-3 bg-light justify-content-evenly w-100 align-items-center">
+              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark">Home</a></li>
+              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">Events</a></li>
+              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">Design</a></li>
+              <li className='d-none d-sm-flex'><a href="#" className="nav-link"><img src={logo} alt="" style={imageStyle}/></a></li>
+              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">Photo</a></li>
+              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">Video</a></li>
+              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">More</a></li>
             </ul>
           </div>
         </div>
