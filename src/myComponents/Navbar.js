@@ -1,5 +1,11 @@
 import React from 'react'
-import logo from "../myImages/trendles.png"
+import logo from "./myImages/trendles.png"
+import {Link} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route
+// } from "react-router-dom";
 
 
 export const Navbar = () => {
@@ -18,6 +24,7 @@ export const Navbar = () => {
 
   return (
     <>
+      
       <nav className="navbar navbar-expand-sm navbar-light bg-light p-0" style={navStyle}>
         <div className="container-fluid">
           <div className='row d-sm-none align-items-center w-100'>
@@ -32,17 +39,18 @@ export const Navbar = () => {
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mt-3 mb-3 bg-light justify-content-evenly w-100 align-items-center">
-              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark">Home</a></li>
-              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">Events</a></li>
-              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">Design</a></li>
-              <li className='d-none d-sm-flex'><a href="#" className="nav-link"><img src={logo} alt="" style={imageStyle}/></a></li>
-              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">Photo</a></li>
-              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">Video</a></li>
-              <li className='nav-item'><a href="#" className="nav-link bg-light text-dark ">More</a></li>
+              <li className='nav-item'><Link to="/" className="nav-link bg-light text-dark">Home</Link></li>
+              <li className='nav-item'><Link to="" className="nav-link bg-light text-dark ">Events</Link></li>
+              <li className='nav-item'><Link to="" className="nav-link bg-light text-dark ">Design</Link></li>
+              <li className='d-none d-sm-flex'><Link to="" className="nav-link"><img src={logo} alt="" style={imageStyle}/></Link></li>
+              <li className='nav-item'><Link to="" className="nav-link bg-light text-dark ">Photo</Link></li>
+              <li className='nav-item'><Link to="" className="nav-link bg-light text-dark ">Video</Link></li>
+              <li className='nav-item'><Link to="" className="nav-link bg-light text-dark ">More</Link></li>
             </ul>
           </div>
         </div>
       </nav>
+      
     </>
   )
 }
