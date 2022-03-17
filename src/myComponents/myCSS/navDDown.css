@@ -14,5 +14,5 @@
   }
   
   .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; 
   }
