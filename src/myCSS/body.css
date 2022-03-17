@@ -1,0 +1,7 @@
+.mainBody{
+    background-image: url("../myImages/whatsapp-bg.jpg");
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    background-size:contain;
+}
