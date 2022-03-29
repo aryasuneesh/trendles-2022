@@ -1,0 +1,7 @@
+.mainBody {
+  background-image: url("../myImages/whatsapp.svg");
+  /* background-color: rgb(16, 29, 46);*/
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
