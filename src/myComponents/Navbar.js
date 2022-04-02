@@ -42,10 +42,10 @@ export const Navbar = () => {
             <div className="container">
               <div className="row justify-content-evenly align-items-center">
                 <div className="col-5 col-sm-4 col-md-6 d-none d-sm-block"><img src={logo} alt="" style={imageStyle} /></div>
-                <div className="col-sm-2 col-md-2"><Link to="/" className="nav-link text-light"><span>Magazine</span></Link></div>
+                <div className="col-sm-2 col-md-2"><Link to="/" className="nav-link text-light"><span className='navlinks'>Magazine</span></Link></div>
                 
                 <div className="col-sm-2 col-md-2"><div class="dropdown">
-                  <Link to="" className="nav-link text-light dropdown-toggle"><span>Clubs</span></Link>
+                  <Link to="" className="nav-link text-light dropdown-toggle"><span className='navlinks'>Clubs</span></Link>
                   <div class="dropdown-content">
                     <p><Link to="" className="nav-link text-light">Photo</Link></p>
                     <p><Link to="" className="nav-link text-light">Video</Link></p>
@@ -54,8 +54,8 @@ export const Navbar = () => {
                   </div>
                 </div>
                 </div>
-                <div className="col-sm-2 col-md-1"><Link to="/" className="nav-link text-light"><span>Blog</span></Link></div>
-                <div className="col-sm-2 col-md-1"><Link to="/" className="nav-link text-light"><span>Events</span></Link></div>
+                <div className="col-sm-2 col-md-1"><Link to="/" className="nav-link text-light"><span className='navlinks'>Blog</span></Link></div>
+                <div className="col-sm-2 col-md-1"><Link to="/" className="nav-link text-light"><span className='navlinks'>Events</span></Link></div>
               </div>
             </div>
           </div>

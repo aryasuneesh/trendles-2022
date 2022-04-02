@@ -20,4 +20,7 @@
   .dropdown:hover .dropdown-content {
     display: block; 
   }
+  .navlinks:hover{
+    color: goldenrod;
+  }
   
