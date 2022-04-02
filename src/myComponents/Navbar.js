@@ -41,11 +41,11 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <div className="container">
               <div className="row justify-content-evenly align-items-center">
-                <div className="col-sm-4 d-none d-sm-block"><img src={logo} alt="" style={imageStyle} /></div>
-                <div className="col-sm-2"><Link to="/" className="nav-link text-light">Magazine</Link></div>
-                <div className="col-sm-2"><Link to="/" className="nav-link text-light">Blog</Link></div>
-                <div className="col-sm-2"><Link to="/" className="nav-link text-light"><div class="dropdown">
-                  <span><Link to="" className="nav-link text-light">Clubs</Link></span>
+                <div className="col-5 col-sm-4 col-md-6 d-none d-sm-block"><img src={logo} alt="" style={imageStyle} /></div>
+                <div className="col-sm-2 col-md-2"><Link to="/" className="nav-link text-light"><span>Magazine</span></Link></div>
+                
+                <div className="col-sm-2 col-md-2"><div class="dropdown">
+                  <Link to="" className="nav-link text-light dropdown-toggle"><span>Clubs</span></Link>
                   <div class="dropdown-content">
                     <p><Link to="" className="nav-link text-light">Photo</Link></p>
                     <p><Link to="" className="nav-link text-light">Video</Link></p>
@@ -53,9 +53,9 @@ export const Navbar = () => {
                     <p><Link to="" className="nav-link text-light">Literary</Link></p>
                   </div>
                 </div>
-                </Link>
                 </div>
-                <div className="col-sm-2 col-1"><Link to="/" className="nav-link text-light">Events</Link></div>
+                <div className="col-sm-2 col-md-1"><Link to="/" className="nav-link text-light"><span>Blog</span></Link></div>
+                <div className="col-sm-2 col-md-1"><Link to="/" className="nav-link text-light"><span>Events</span></Link></div>
               </div>
             </div>
           </div>

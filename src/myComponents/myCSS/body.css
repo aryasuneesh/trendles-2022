@@ -4,6 +4,3 @@
     width: 100%;
     background-size:cover;
 }
-.dropdown:hover .mainBody{
-    filter: blur(1px);
-}

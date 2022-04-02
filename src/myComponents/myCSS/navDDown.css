@@ -7,6 +7,7 @@
     display: none;
     position: absolute;
     background-image: url("../myImages/bg.svg");
+    filter: opacity(0.95);
     font-weight: 500;
     font-family:'Courier New', Courier, monospace;
     padding: 1rem 1rem 0rem 1rem;
@@ -19,3 +20,4 @@
   .dropdown:hover .dropdown-content {
     display: block; 
   }
+  
