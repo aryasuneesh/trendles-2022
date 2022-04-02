@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "./myImages/trendles.png"
+import logo from "./myImages/ticon.svg"
 import { Link } from "react-router-dom";
 import "./myCSS/navDDown.css";
 // import {
@@ -11,27 +11,27 @@ import "./myCSS/navDDown.css";
 
 export const Navbar = () => {
   let imageStyle = {
-    height: "49px",
-    width: "60px",
-    transform: "scale(1.6)",
+    height: "2rem",
+    width: "3rem",
+    transform: "scale(2)",
   }
   let navStyle = {
     height: "68px",
     width: "100%",
-    backgroundColor: "white",
+    color:"white",
+    backgroundColor: "transparent",
     borderRadius: "0px 0px 15px 15px",
     // border:"2px dashed gray"
   }
 
   return (
     <>
-
-      <nav className="navbar navbar-expand-sm navbar-light bg-light p-0" style={navStyle}>
+      <nav className="navbar navbar-expand-sm navbar-dark" style={navStyle}>
         <div className="container-fluid">
           <div className='row d-sm-none align-items-center w-100'>
-            <div className="col-2 "><a href="#" className="nav-link"><img src={logo} alt="" style={imageStyle} /></a></div>
-            <div className="col-2 offset-1 fs-1 font-monospace">Trendles</div>
-            <div className="col-2 offset-5">
+            <div className="col-2 "><a href="#" className="nav-link"><img src={logo} alt="" style={imageStyle} /></a>
+            </div>
+            <div className="col-2 offset-8">
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -39,55 +39,25 @@ export const Navbar = () => {
           </div>
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav mt-3 mb-3 bg-light justify-content-evenly w-100 align-items-center">
-              <li className='nav-item'><Link to="/" className="nav-link bg-light text-dark">Home</Link></li>
-              <li className='nav-item'>
-                <div class="dropdown">
-                  <span><Link to="" className="nav-link bg-light text-dark ">Events</Link></span>
+            <div className="container">
+              <div className="row justify-content-evenly align-items-center">
+                <div className="col-sm-4 d-none d-sm-block"><img src={logo} alt="" style={imageStyle} /></div>
+                <div className="col-sm-2"><Link to="/" className="nav-link text-light">Magazine</Link></div>
+                <div className="col-sm-2"><Link to="/" className="nav-link text-light">Blog</Link></div>
+                <div className="col-sm-2"><Link to="/" className="nav-link text-light"><div class="dropdown">
+                  <span><Link to="" className="nav-link text-light">Clubs</Link></span>
                   <div class="dropdown-content">
-                    <p><Link to="" className="nav-link bg-light text-dark ">Adavya</Link></p>
-                    <p><Link to="" className="nav-link bg-light text-dark ">Enlace</Link></p>
+                    <p><Link to="" className="nav-link text-light">Photo</Link></p>
+                    <p><Link to="" className="nav-link text-light">Video</Link></p>
+                    <p><Link to="" className="nav-link text-light">Design</Link></p>
+                    <p><Link to="" className="nav-link text-light">Literary</Link></p>
                   </div>
                 </div>
-              </li>
-              <li className='nav-item'>
-                <div class="dropdown">
-                  <span><Link to="" className="nav-link bg-light text-dark ">Design</Link></span>
-                  <div class="dropdown-content">
-                    <p><Link to="" className="nav-link bg-light text-dark ">Design1</Link></p>
-                    <p><Link to="" className="nav-link bg-light text-dark ">Design2</Link></p>
-                  </div>
+                </Link>
                 </div>
-              </li>
-              <li className='d-none d-sm-flex'><Link to="" className="nav-link"><img src={logo} alt="" style={imageStyle} /></Link></li>
-              <li className='nav-item'>
-                <div class="dropdown">
-                  <span><Link to="" className="nav-link bg-light text-dark ">Photo</Link></span>
-                  <div class="dropdown-content">
-                    <p><Link to="" className="nav-link bg-light text-dark ">Photo1</Link></p>
-                    <p><Link to="" className="nav-link bg-light text-dark ">Photo2</Link></p>
-                  </div>
-                </div>
-              </li>
-              <li className='nav-item'>
-                <div class="dropdown">
-                  <span><Link to="" className="nav-link bg-light text-dark ">video</Link></span>
-                  <div class="dropdown-content">
-                    <p><Link to="" className="nav-link bg-light text-dark ">video1</Link></p>
-                    <p><Link to="" className="nav-link bg-light text-dark ">video2</Link></p>
-                  </div>
-                </div>
-              </li>
-              <li className='nav-item'>
-                <div class="dropdown">
-                  <span><Link to="" className="nav-link bg-light text-dark ">More</Link></span>
-                  <div class="dropdown-content">
-                    <p><Link to="" className="nav-link bg-light text-dark ">More1</Link></p>
-                    <p><Link to="" className="nav-link bg-light text-dark ">More2</Link></p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                <div className="col-sm-2 col-1"><Link to="/" className="nav-link text-light">Events</Link></div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

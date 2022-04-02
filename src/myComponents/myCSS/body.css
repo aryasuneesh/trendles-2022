@@ -1,6 +1,9 @@
 .mainBody{
-    background-image: url("../myImages/whatsapp.svg");    
+    background-image: url("../myImages/bg.svg");    
     height: 100%;
     width: 100%;
     background-size:cover;
+}
+.dropdown:hover .mainBody{
+    filter: blur(1px);
 }
