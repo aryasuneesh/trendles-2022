@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./events.css";
-import data from "./data";
+import "./myCSS/Events.css";
+import data from "./eventsData";
 
 const Events = () => {
   const [heading, setHeading] = useState("CURRENT");
